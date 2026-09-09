@@ -1,0 +1,32 @@
+.card{
+  display:grid;
+  grid-template-columns:1fr 120px;
+  margin-bottom:12px;
+  overflow:hidden;
+}
+.main{ padding:18px 20px; }
+.top{ display:flex; align-items:center; gap:11px; margin-bottom:12px; }
+.avatar{
+  width:38px; height:38px; border-radius:50%;
+  background:#EAF3FC; color:var(--blue);
+  display:flex; align-items:center; justify-content:center;
+  font-weight:700; font-size:13.5px;
+  overflow:hidden; flex-shrink:0;
+}
+.avatar img{ width:100%; height:100%; object-fit:cover; }
+.name{ font-weight:700; font-size:14.5px; color:var(--navy); }
+.meta{ font-size:12px; color:var(--grey); margin-top:1px; }
+.bars{ display:flex; flex-direction:column; gap:7px; }
+.barRow{ display:grid; grid-template-columns:92px 1fr 42px; align-items:center; gap:8px; }
+.barLbl{ font-size:11.5px; color:var(--grey); }
+.barVal{ font-size:11.5px; color:var(--navy); text-align:right; font-weight:600; }
+.track{ height:6px; background:var(--bg-alt); border-radius:4px; overflow:hidden; }
+.fill{ height:100%; background:var(--sky); border-radius:4px; }
+.stub{
+  border-left:1.5px dashed var(--border);
+  background:var(--bg-alt);
+  display:flex; flex-direction:column; align-items:center; justify-content:center;
+  gap:6px; padding:16px 10px;
+}
+.scoreBig{ font-family:var(--font-display); font-size:26px; font-weight:800; color:var(--blue); }
+.scoreLbl{ font-size:9.5px; color:var(--grey); text-transform:uppercase; letter-spacing:0.03em; }

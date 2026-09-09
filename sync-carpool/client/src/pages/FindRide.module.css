@@ -1,0 +1,9 @@
+.wrap{ padding:48px 0 80px; }
+.h1{ font-size:30px; }
+.sub{ color:var(--grey); margin-top:8px; }
+.notice{ background:#EAF3FC; color:var(--blue); font-size:13.5px; padding:12px 16px; border-radius:10px; margin-top:18px; }
+.notice a{ font-weight:700; cursor:pointer; text-decoration:underline; }
+.grid{ display:grid; grid-template-columns:0.85fr 1.15fr; gap:28px; margin-top:28px; align-items:start; }
+@media (max-width:900px){ .grid{ grid-template-columns:1fr; } }
+.status{ color:var(--grey); font-size:14px; padding:20px 0; }
+.error{ color:var(--danger); font-size:14px; padding:14px 18px; background:#FBEAE7; border-radius:10px; }

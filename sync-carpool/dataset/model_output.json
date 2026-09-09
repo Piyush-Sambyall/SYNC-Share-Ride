@@ -1,0 +1,26 @@
+{
+  "n_samples_trained_on": 15000,
+  "note": "Original upload had 1 row / 0 feature columns; this dataset extends its schema with synthetic, domain-formula-labeled feature rows for training.",
+  "regressor_test_mae": 0.0427,
+  "regressor_test_r2": 0.8286,
+  "classifier_test_accuracy": 0.869,
+  "classifier_test_auc": 0.9476,
+  "feature_importances": {
+    "route_overlap": 0.4343,
+    "detour_km": 0.1744,
+    "time_overlap_min": 0.1229,
+    "pref_match": 0.2553,
+    "trust_score": 0.0045,
+    "pickup_distance_km": 0.0087
+  },
+  "surrogate_coefficients": {
+    "route_overlap": 0.33144,
+    "detour_km": -0.0231,
+    "time_overlap_min": 0.00275,
+    "pref_match": 0.11995,
+    "trust_score": 0.00629,
+    "pickup_distance_km": -0.00544
+  },
+  "surrogate_intercept": 0.30993,
+  "surrogate_fidelity_mae_vs_rf": 0.0113
+}

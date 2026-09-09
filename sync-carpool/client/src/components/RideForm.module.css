@@ -1,0 +1,14 @@
+.form{
+  padding:24px;
+  width:100%;
+  max-width:480px;
+}
+.row{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+}
+@media (max-width:520px){
+  .row{ flex-direction:column; }
+  .row .field{ width:100% !important; }
+}

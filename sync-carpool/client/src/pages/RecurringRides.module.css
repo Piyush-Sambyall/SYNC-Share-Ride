@@ -1,0 +1,12 @@
+.h1{ font-size:26px; }
+.sub{ color:var(--grey); font-size:13.5px; margin-top:6px; margin-bottom:24px; line-height:1.6; }
+.card{ padding:24px; margin-bottom:32px; }
+.row2{ display:grid; grid-template-columns:1fr 1fr; gap:14px; }
+@media (max-width:520px){ .row2{ grid-template-columns:1fr; } }
+.error{ color:var(--danger); background:#FBEAE7; padding:10px 14px; border-radius:8px; margin-bottom:14px; font-size:13.5px; }
+.sectionTitle{ font-size:15px; color:var(--navy); margin-bottom:12px; }
+.empty{ color:var(--grey); font-size:13.5px; padding:18px; border:1.5px dashed var(--border); border-radius:12px; }
+.scheduleCard{ display:flex; justify-content:space-between; align-items:center; padding:16px 18px; margin-bottom:10px; }
+.route{ font-weight:600; color:var(--navy); font-size:14.5px; }
+.meta{ font-size:12.5px; color:var(--grey); margin-top:3px; }
+.scheduleActions{ display:flex; gap:8px; }

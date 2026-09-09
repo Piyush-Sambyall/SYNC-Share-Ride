@@ -1,0 +1,24 @@
+.footer{
+  background:var(--navy-deep);
+  color:#C7D3DF;
+  margin-top:80px;
+}
+.grid{
+  display:grid;
+  grid-template-columns:1.6fr 1fr 1fr 1fr;
+  gap:32px;
+  padding:56px 32px 40px;
+}
+.brandCol .logo{ height:26px; margin-bottom:14px; background:#fff; padding:8px 12px; border-radius:8px; }
+.tagline{ font-size:13.5px; color:#93A5B8; max-width:260px; line-height:1.6; }
+.footer h4{ color:#fff; font-size:13px; margin-bottom:14px; font-weight:600; }
+.footer ul li{ font-size:13.5px; padding:6px 0; color:#9AACC0; }
+.bottom{
+  border-top:1px solid rgba(255,255,255,0.08);
+  padding:18px 32px; display:flex; justify-content:space-between;
+  font-size:12.5px; color:#7C90A6;
+}
+@media (max-width:760px){
+  .grid{ grid-template-columns:1fr 1fr; }
+  .bottom{ flex-direction:column; gap:6px; }
+}

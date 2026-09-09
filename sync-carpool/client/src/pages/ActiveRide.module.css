@@ -1,0 +1,59 @@
+.wrap{ display:grid; grid-template-columns:1.3fr 1fr; grid-template-rows:auto 1fr; height:calc(100vh - 63px); }
+@media (max-width:900px){ .wrap{ grid-template-columns:1fr; height:auto; } }
+.roleBanner{
+  grid-column:1 / -1; display:flex; align-items:center; gap:10px;
+  padding:10px 20px; font-size:12.5px; font-weight:700; text-transform:uppercase; letter-spacing:0.04em;
+}
+.roleBannerRider{ background:#EAF3FC; color:var(--blue); }
+.roleBannerDriver{ background:var(--amber-soft,#E6F6EC); color:var(--amber-dim,#0E7A46); }
+.mapCol{ position:relative; background:var(--bg-alt); min-height:0; }
+.map{ width:100%; height:100%; min-height:340px; }
+.mapFallback{ display:flex; align-items:center; justify-content:center; height:100%; min-height:340px; padding:40px; text-align:center; color:var(--grey); }
+.infoCol{ padding:20px; overflow-y:auto; min-height:0; }
+.statusBar{ display:flex; justify-content:space-between; align-items:center; margin-bottom:16px; }
+.statusPill{ background:var(--amber-soft,#E6F6EC); color:var(--navy); font-weight:700; font-size:13px; padding:7px 14px; border-radius:100px; text-transform:capitalize; }
+.cardTitle{ font-size:14px; color:var(--navy); margin-bottom:12px; }
+.row{ display:flex; justify-content:space-between; padding:7px 0; border-bottom:1px solid var(--border); font-size:13.5px; }
+.row:last-child{ border-bottom:none; }
+.rowK{ color:var(--grey); }
+.rowV{ color:var(--ink); font-weight:500; }
+.rowVBold{ color:var(--navy); font-weight:700; font-family:var(--font-mono); }
+.driverRow{ display:flex; align-items:center; gap:12px; margin-bottom:12px; }
+.avatar{ width:40px; height:40px; border-radius:50%; background:#EAF3FC; color:var(--blue); display:flex; align-items:center; justify-content:center; font-weight:700; overflow:hidden; flex-shrink:0; }
+.avatar img{ width:100%; height:100%; object-fit:cover; }
+.callBtn{
+  display:flex; align-items:center; gap:6px; padding:8px 14px; border-radius:100px;
+  background:#E6F6EC; color:var(--success,#1B8A5A); font-size:12.5px; font-weight:700;
+  text-decoration:none; white-space:nowrap;
+}
+.callBtn:hover{ background:#D5F0DE; }
+.driverName{ font-weight:700; color:var(--navy); font-size:14.5px; }
+.driverMeta{ font-size:12px; color:var(--grey); margin-top:2px; }
+.checkRow{ display:flex; align-items:center; gap:10px; padding:9px 0; font-size:13.5px; cursor:pointer; }
+.checkRow input{ width:16px; height:16px; }
+.hint{ font-size:12.5px; color:var(--grey); margin-top:6px; }
+.otpInput{ width:100%; padding:12px 14px; border:1.5px solid var(--border); border-radius:9px; font-size:18px; letter-spacing:6px; text-align:center; font-family:var(--font-mono); }
+.otpDisplay{
+  width:100%; padding:18px 14px; border:1.5px dashed var(--blue); border-radius:9px; background:#EAF3FC;
+  font-size:32px; font-weight:700; letter-spacing:10px; text-align:center; font-family:var(--font-mono);
+  color:var(--navy); margin-bottom:12px;
+}
+.err{ color:var(--danger); font-size:13px; margin-top:8px; }
+.starRow{ display:flex; gap:8px; font-size:30px; margin-bottom:14px; }
+.star{ color:var(--border); cursor:pointer; }
+.starOn{ color:#F5B400; cursor:pointer; }
+.tagRow{ display:flex; flex-wrap:wrap; gap:8px; }
+.verifyStatus{ display:flex; flex-direction:column; gap:6px; margin-bottom:14px; }
+.verifyOk{ color:var(--success); font-size:12.5px; font-weight:600; }
+.verifyPending{ color:var(--grey); font-size:12.5px; }
+.splitRow{ display:flex; justify-content:space-between; align-items:center; padding:7px 0; border-bottom:1px solid var(--border); font-size:13.5px; }
+.stepper{ display:flex; align-items:center; gap:10px; font-weight:600; color:var(--navy); font-size:13px; }
+.stepBtn{ width:26px; height:26px; border-radius:50%; border:1.5px solid var(--border); background:#fff; cursor:pointer; font-size:15px; line-height:1; }
+.stepBtn:hover{ border-color:var(--blue); color:var(--blue); }
+.payRow{ display:flex; gap:10px; margin-top:12px; flex-wrap:wrap; }
+.payRow .btn{ flex:1; min-width:150px; }
+.reviewInput{ width:100%; padding:11px 12px; border:1.5px solid var(--border); border-radius:9px; font-size:13.5px; font-family:inherit; resize:vertical; margin-top:4px; }
+.savedLine{ color:var(--success); font-size:13px; font-weight:600; }
+.qrOverlay{ position:fixed; inset:0; background:rgba(5,32,56,0.5); display:flex; align-items:center; justify-content:center; z-index:500; padding:20px; }
+.qrCard{ background:#fff; border-radius:16px; padding:28px; width:100%; max-width:320px; text-align:center; box-shadow:0 20px 60px rgba(5,32,56,0.3); }
+.qrBox{ display:flex; justify-content:center; padding:16px; background:#fff; border:1px solid var(--border); border-radius:12px; margin-top:10px; }
